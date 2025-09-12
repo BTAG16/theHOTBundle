@@ -66,11 +66,13 @@ export default function ContactForm() {
       // Simulate API call
       await new Promise(resolve => setTimeout(resolve, 1000));
       
+      console.log("Showing success toast...");
       toast({
         title: "Message Sent Successfully!",
         description: "Thank you for contacting us. We'll get back to you within 24 hours.",
       });
 
+      console.log("Clearing form data...");
       // Reset form
       setFormData({
         name: "",
@@ -79,6 +81,8 @@ export default function ContactForm() {
         subject: "",
         message: ""
       });
+      
+      console.log("Form submission completed successfully");
     } catch (error) {
       console.error("Form submission error:", error);
       toast({
