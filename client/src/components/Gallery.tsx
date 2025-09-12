@@ -13,39 +13,39 @@ export default function Gallery() {
   const placeholderItems: GalleryItem[] = [
     {
       id: "1",
-      title: "Elegant Birthday Bundle",
-      description: "Custom curated birthday gift with premium wrapping",
-      imageUrl: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+      title: "Premium Gift Experience",
+      description: "Exquisite luxury bundles designed for truly unforgettable moments.",
+      imageUrl: "/images/IMG_9696.PNG"
     },
     {
       id: "2", 
       title: "Anniversary Special",
       description: "Romantic anniversary bundle with personalized touches",
-      imageUrl: "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+      imageUrl: "/images/IMG_9697.PNG"
     },
     {
       id: "3",
-      title: "Corporate Gift Package", 
-      description: "Professional gift bundle for business occasions",
-      imageUrl: "https://images.unsplash.com/photo-1464207687429-7505649dae38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+      title: "Proposal Package",
+      description: "Curated for the perfect 'Yes!' — elegant, intimate, and unforgettable.",
+      imageUrl: "/images/IMG_9698.PNG"
     },
     {
       id: "4",
-      title: "Baby Shower Bundle",
-      description: "Thoughtfully curated gifts for new parents",
-      imageUrl: "https://images.unsplash.com/photo-1607081692248-75840b20fdc0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+      title: "Event Styling & Decor",
+      description: "Transform your special moments with bespoke event organization and decoration.",
+      imageUrl: "/images/IMG_9699.PNG"
     },
     {
       id: "5",
-      title: "Holiday Collection",
-      description: "Festive holiday bundle with seasonal favorites",
-      imageUrl: "https://images.unsplash.com/photo-1482517967863-00e15c9b44be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+      title: "Surprise Drop-Offs",
+      description: "Magical surprise moments — we deliver love, laughter, and the unexpected.",
+      imageUrl: "/images/IMG_9701.PNG"
     },
     {
       id: "6",
-      title: "Wellness Package",
-      description: "Self-care bundle with premium wellness products",
-      imageUrl: "https://images.unsplash.com/photo-1576426863848-c21f53c60b19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+      title: "Outdoor Decor & Events",
+      description: "From intimate picnics to lavish setups — curated outdoor experiences that wow.",
+      imageUrl: "/images/IMG_9700.PNG"
     }
   ];
 

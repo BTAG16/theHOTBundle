@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Gallery from "@/components/Gallery";
 import Testimonials from "@/components/Testimonials";
+import Team from "@/components/Team";
 import ContactForm from "@/components/ContactForm";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -34,6 +35,7 @@ export default function Home() {
           <Hero onGetStarted={handleGetStarted} />
           <About />
           <Gallery />
+          <Team />
           <Testimonials />
           <ContactForm />
           <Contact />

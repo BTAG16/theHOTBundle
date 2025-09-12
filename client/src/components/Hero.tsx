@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-const heroImage = "/images/Main_1757705167367.jpg";
+const heroImage = "/images/IMG_9702.PNG";
 
 interface HeroProps {
   onGetStarted?: () => void;
@@ -7,23 +7,26 @@ interface HeroProps {
 
 export default function Hero({ onGetStarted }: HeroProps) {
   const handleGetStarted = () => {
-    console.log('Get Started clicked');
+    console.log("Get Started clicked");
     onGetStarted?.();
-    
+
     // Smooth scroll to contact form section
-    const contactFormSection = document.getElementById('contact-form');
+    const contactFormSection = document.getElementById("contact-form");
     if (contactFormSection) {
-      contactFormSection.scrollIntoView({ behavior: 'smooth' });
+      contactFormSection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden scroll-mt-20">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden scroll-mt-20"
+    >
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src={heroImage} 
-          alt="Luxury gift bundle" 
+        <img
+          src={heroImage}
+          alt="Luxury gift bundle"
           className="w-full h-full object-cover"
         />
         {/* Dark wash gradient overlay for text readability */}
@@ -35,8 +38,7 @@ export default function Hero({ onGetStarted }: HeroProps) {
         <div className="max-w-4xl mx-auto">
           {/* Main Headline */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-            Luxury Gifting,{" "}
-            <span className="text-primary">Redefined.</span>
+            Luxury Gifting, <span className="text-primary">Redefined.</span>
           </h1>
 
           {/* Subtext */}
