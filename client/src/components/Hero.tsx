@@ -10,15 +10,15 @@ export default function Hero({ onGetStarted }: HeroProps) {
     console.log('Get Started clicked');
     onGetStarted?.();
     
-    // Smooth scroll to contact section
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
+    // Smooth scroll to contact form section
+    const contactFormSection = document.getElementById('contact-form');
+    if (contactFormSection) {
+      contactFormSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden scroll-mt-20">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 

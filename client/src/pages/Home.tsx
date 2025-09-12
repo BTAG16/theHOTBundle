@@ -1,6 +1,9 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import Gallery from "@/components/Gallery";
+import Testimonials from "@/components/Testimonials";
+import ContactForm from "@/components/ContactForm";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/components/ThemeProvider";
@@ -30,6 +33,9 @@ export default function Home() {
         <main>
           <Hero onGetStarted={handleGetStarted} />
           <About />
+          <Gallery />
+          <Testimonials />
+          <ContactForm />
           <Contact />
         </main>
         

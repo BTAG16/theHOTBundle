@@ -52,7 +52,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section id="testimonials" className="py-16 lg:py-24 bg-muted/30">
+    <section id="testimonials" className="py-16 lg:py-24 bg-muted/30 scroll-mt-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
@@ -122,9 +122,9 @@ export default function Testimonials() {
                 <button
                   onClick={() => {
                     console.log('Start your gifting journey clicked');
-                    const contactSection = document.getElementById('contact');
-                    if (contactSection) {
-                      contactSection.scrollIntoView({ behavior: 'smooth' });
+                    const contactFormSection = document.getElementById('contact-form');
+                    if (contactFormSection) {
+                      contactFormSection.scrollIntoView({ behavior: 'smooth' });
                     }
                   }}
                   className="bg-primary text-primary-foreground px-6 py-3 rounded-md font-semibold hover-elevate transition-all duration-300"

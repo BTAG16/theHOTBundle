@@ -50,7 +50,7 @@ export default function Gallery() {
   ];
 
   return (
-    <section id="gallery" className="py-16 lg:py-24 bg-background">
+    <section id="gallery" className="py-16 lg:py-24 bg-background scroll-mt-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
@@ -105,9 +105,9 @@ export default function Gallery() {
             <button
               onClick={() => {
                 console.log('View more gallery items clicked');
-                const contactSection = document.getElementById('contact');
-                if (contactSection) {
-                  contactSection.scrollIntoView({ behavior: 'smooth' });
+                const contactFormSection = document.getElementById('contact-form');
+                if (contactFormSection) {
+                  contactFormSection.scrollIntoView({ behavior: 'smooth' });
                 }
               }}
               className="text-primary hover:text-primary/80 font-semibold underline hover-elevate px-2 py-1 rounded"

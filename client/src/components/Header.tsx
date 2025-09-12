@@ -16,6 +16,8 @@ export default function Header({ onNavigate }: HeaderProps) {
   const navItems = [
     { label: "Home", href: "#home" },
     { label: "About", href: "#about" },
+    { label: "Gallery", href: "#gallery" },
+    { label: "Testimonials", href: "#testimonials" },
     { label: "Contact", href: "#contact" }
   ];
 
