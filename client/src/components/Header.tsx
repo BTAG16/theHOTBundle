@@ -2,7 +2,8 @@ import { Moon, Sun, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "./ThemeProvider";
-const logoImage = "/images/IMG_9644_1757704856510.PNG";
+const lightModeLogo = "/images/IMG_9646_1757704856505.PNG"; // Gold logo for light mode
+const darkModeLogo = "/images/IMG_9644_1757704856510.PNG"; // White gift box for dark mode
 
 interface HeaderProps {
   onNavigate?: (section: string) => void;
@@ -37,7 +38,7 @@ export default function Header({ onNavigate }: HeaderProps) {
           {/* Logo and Company Name */}
           <div className="flex items-center space-x-3">
             <img 
-              src={logoImage} 
+              src={theme === "light" ? lightModeLogo : darkModeLogo} 
               alt="The HOT Bundle Logo" 
               className="h-8 w-8 lg:h-10 lg:w-10 object-contain"
             />
