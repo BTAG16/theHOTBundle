@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Mail, Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { sendEmail } from "@/lib/emailjs";
 
 interface FormData {
   name: string;
@@ -59,14 +60,12 @@ export default function ContactForm() {
     setIsSubmitting(true);
 
     try {
-      // TODO: Implement actual email sending functionality
-      // This would typically involve sending data to your backend endpoint
       console.log("Form submitted:", formData);
       
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // Send email using EmailJS
+      await sendEmail(formData);
       
-      console.log("Showing success toast...");
+      console.log("Email sent successfully!");
       toast({
         title: "Message Sent Successfully!",
         description: "Thank you for contacting us. We'll get back to you within 24 hours.",
