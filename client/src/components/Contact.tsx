@@ -5,9 +5,15 @@ export default function Contact() {
   const contactInfo = [
     {
       icon: Phone,
-      title: "Phone Numbers",
-      details: ["+2349039525262", "+2349066890560"],
-      href: "tel:+2349039525262"
+      title: "Abuja Catalog",
+      details: ["+2349039525262"],
+      href: "https://wa.me/c/2349039525262"
+    },
+    {
+      icon: Phone,
+      title: "Benin Catalog",
+      details: ["+2349066890560"],
+      href: "https://wa.me/c/2349066890560"
     },
     {
       icon: Mail,
@@ -25,14 +31,17 @@ export default function Contact() {
 
   const handleContactClick = (href: string | null) => {
     if (href) {
-      window.open(href, '_self');
+      window.open(href, "_blank"); // open in new tab
       console.log(`Contact clicked: ${href}`);
     }
   };
 
   const handleInstagramClick = () => {
-    window.open('https://www.instagram.com/thehotbundle?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==', '_blank');
-    console.log('Instagram link clicked');
+    window.open(
+      "https://www.instagram.com/thehotbundle?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+      "_blank"
+    );
+    console.log("Instagram link clicked");
   };
 
   return (
@@ -45,21 +54,23 @@ export default function Contact() {
               Get In Touch
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Ready to create the perfect gift bundle? Contact us today and let's make 
+              Ready to create the perfect gift bundle? Contact us today and let's make
               your gifting experience truly extraordinary.
             </p>
           </div>
 
           {/* Contact Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-8">
             {contactInfo.map((contact, index) => (
-              <Card 
-                key={index} 
+              <Card
+                key={index}
                 className={`hover-elevate transition-all duration-300 border-card-border ${
-                  contact.href ? 'cursor-pointer' : ''
+                  contact.href ? "cursor-pointer" : ""
                 }`}
                 onClick={() => handleContactClick(contact.href)}
-                data-testid={`card-contact-${contact.title.toLowerCase().replace(' ', '-')}`}
+                data-testid={`card-contact-${contact.title
+                  .toLowerCase()
+                  .replace(" ", "-")}`}
               >
                 <CardHeader className="text-center pb-3">
                   <div className="inline-flex items-center justify-center w-12 h-12 bg-primary/10 rounded-lg mx-auto mb-3">
@@ -84,7 +95,7 @@ export default function Contact() {
           <div className="text-center">
             <Card className="inline-block hover-elevate transition-all duration-300 border-card-border">
               <CardContent className="p-6">
-                <button 
+                <button
                   onClick={handleInstagramClick}
                   className="flex items-center space-x-3 text-foreground hover:text-primary transition-colors"
                   data-testid="button-instagram"
