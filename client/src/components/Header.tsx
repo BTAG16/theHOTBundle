@@ -45,7 +45,7 @@ export default function Header({ onNavigate }: HeaderProps) {
               className="h-8 w-8 lg:h-10 lg:w-10 object-contain"
             />
             <h1 className="text-lg lg:text-xl font-bold text-foreground">
-              The HOT Bundle
+              <a href="#home">The HOT Bundle</a>
             </h1>
           </div>
 
