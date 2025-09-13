@@ -1,0 +1,8 @@
+server/
+shared/
+drizzle.config.ts
+*.md
+.gitignore
+node_modules/
+.env
+.env.local
